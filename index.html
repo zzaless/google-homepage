@@ -2,18 +2,200 @@
 <html>
 <head>
     <title>Google</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet"> 
+    <style>
+        a { color: inherit; } 
+        a:hover {
+            text-decoration: underline !important;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        .headerlink {
+            color: rgb(39, 39, 39);
+        }
+        #aplicationbutton {
+            padding: 0;
+        }
+        header {
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            height: 30px;
+            font-size: 13px;
+            margin: 20px;
+                                }
+        .headerlink {
+
+            padding: 7px;
+        }
+        main {
+            text-align: center;
+        }
+html {
+	height: 100%;
+    
+    
+}	
+
+body {
+	min-height: 100%;
+	position: relative;
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
+    font-family: arial,sans-serif;
+    
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#aplicationbutton {
+    background-color: white;
+    opacity: 0.5;
+    align-items: flex-end;
+    padding-right: 5px;
+}
+#aplicationbutton:hover {
+    opacity: 0.8;
+}
+button {
+    
+    border: none;
+    border-radius: 3%;
+}
+#loginbutton {
+    background-color: rgb(72, 132, 211);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+#searchbutton {
+    background-color:rgb(243, 243, 243);
+    color:rgb(100, 100, 100);
+    padding: 10px 15px 10px 15px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 5px;
+   
+  
+}
+#luckybutton {  
+    background-color:rgb(243, 243, 243);
+    color:rgb(100, 100, 100);
+    padding: 10px 15px 10px 15px;
+    display: inline-block;
+    margin-left: 5px;}
+#googlelogo {
+    margin: 20px;
+    }
+#searchbox {
+    display: inline-block;
+    margin: 0px auto;
+    padding: 0px 0px 0px 0px;
+    width: 500px;
+    height: 40px;
+    border: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(218, 220, 224);
+}
+#magnifyingglass {
+    width: 15px;
+    height: auto;
+}
+input {
+width: 450px;
+height: 38px;
+border-style: none;
+outline: none;
+line-height: 38px;
+}
+#polska {
+    border: 1px;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: rgb(219, 214, 214);
+    background-color: rgb(245, 238, 238);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+
+}
+#footerdol {
+    display: flex;
+    border: 1px;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: rgb(219, 214, 214);
+    background-color: rgb(245, 238, 238);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    width: auto;
+    margin: 0;
+    text-decoration: gray;
+    color: rgb(105, 105, 105)
+    }
+#footerdol:visited {
+    text-decoration: gray;
+}
+#linki3 {
+    flex-direction: column;
+}
+#linki4 {
+    flex-direction: column;
+    flex: 25%;
+}
+    </style>
 </head>
 <body>
-<header>
-    <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
-    <a href="https://www.google.pl/imghp?hl=pl&tab=wi&ogbl">Grafika</a>
-    <button>#</button>
-    <button>Zaloguj się</button>
+        <header>
+    <a href="https://mail.google.com/mail/?tab=wm&ogbl" class="headerlink">Gmail</a>
+    <a href="https://www.google.pl/imghp?hl=pl&tab=wi&ogbl" class="headerlink">Grafika</a>
+    <a href="someurl" id="aplicationbutton"><img src="background.png"></a>
+    <button id="loginbutton">Zaloguj się</button>
 </header>
 <main>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo Google">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" id="googlelogo">
+    <div>
+    <div id="searchbox">
+    <img src="magnifying-glass.png" id="magnifyingglass">
+    <input type="text">
+    </div>
+</div>
+</div>
+    <button id="searchbutton">Szukaj w Google</button>
+    <button id="luckybutton">Szczęśliwy traf</button>
 </main>
-<footer></footer>
-
+<footer id="footer">
+    <div>
+        <p style="color:rgb(126, 126, 126);" id="polska">Polska</p>
+    </div>
+    <div id=footerdol>
+        <div id="linki4">
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj74f-Fof_oAhWB8eAKHTTKCuUQkdQCCBc&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fpl_pl%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw07LxD_MJO4tNv3OJCct8ld
+        " style="padding-right: 20px;">Reklamuj się</a>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj74f-Fof_oAhWB8eAKHTTKCuUQktQCCBg&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K" style="padding-right:20px">Dla firm</a>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj74f-Fof_oAhWB8eAKHTTKCuUQkNQCCBk&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-PL%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw22tcV67ILx41HCroBODRdS" style="padding-right: 20px;">O nas</a>
+        <a href="https://google.com/search/howsearchworks/?fg=1">Jak działa wyszukiwarka</a>
+    </div>
+    <div id="linki3">
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj74f-Fof_oAhWB8eAKHTTKCuUQ8awCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri" style="padding-right: 20px;">Prywatność</a>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj74f-Fof_oAhWB8eAKHTTKCuUQ8qwCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n>" style="padding-right: 20px;">Warunki</a>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj74f-Fof_oAhWB8eAKHTTKCuUQ8qwCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n">Ustawienia</a>
+    </div>
+</div>
+</footer>
 </body>
 </html>
